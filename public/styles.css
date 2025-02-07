@@ -705,9 +705,6 @@
   .m-2 {
     margin: calc(var(--spacing) * 2);
   }
-  .m-5 {
-    margin: calc(var(--spacing) * 5);
-  }
   .mx-auto {
     margin-inline: auto;
   }
@@ -830,9 +827,6 @@
   }
   .min-h-screen {
     min-height: 100vh;
-  }
-  .w-1 {
-    width: calc(var(--spacing) * 1);
   }
   .w-1\/2 {
     width: calc(1/2 * 100%);
