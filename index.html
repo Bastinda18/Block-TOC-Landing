@@ -10,7 +10,17 @@
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700;900&display=swap" rel="stylesheet">
         <link href="./public/styles.css" rel="stylesheet">
-        
+
+        <!-- Google tag (gtag.js) -->
+            <script async src="https://www.googletagmanager.com/gtag/js?id=G-P943RKEJ65"></script>
+            <script>
+            window.dataLayer = window.dataLayer || [];
+            function gtag(){dataLayer.push(arguments);}
+            gtag('js', new Date());
+
+            gtag('config', 'G-P943RKEJ65');
+            </script>
+                    
         <script type="application/ld+json">
         {
             "@context": "https://schema.org",
@@ -132,6 +142,17 @@ function isElementInViewport(el) {
       rect.bottom <= (window.innerHeight || document.documentElement.clientHeight))
   );
 }
+
+document.addEventListener("DOMContentLoaded", function() {
+        document.querySelectorAll("a").forEach(link => {
+            link.addEventListener("click", function() {
+                gtag('event', 'click', {
+                    'event_category': 'link',
+                    'event_label': link.href
+                });
+            });
+        });
+    });
     </script>
 </body>
 
